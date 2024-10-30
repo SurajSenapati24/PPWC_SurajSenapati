@@ -37,12 +37,12 @@ The program captures and stores student information such as their name, roll num
    - The program frees the dynamically allocated memory for the `name` member using the `free` function to prevent memory leaks.
 
 ## Output: 
-Enter name: 
-Suraj Senapati
-Enter Roll Number:
-51
-Enter Marks:
-91.1
-Name: Suraj Senapati
-Roll Number: 51
-Marks: 91.10
+#### Enter name: 
+#### Suraj Senapati
+#### Enter Roll Number:
+#### 51
+#### Enter Marks:
+#### 91.1
+#### Name: Suraj Senapati
+#### Roll Number: 51
+#### Marks: 91.10
