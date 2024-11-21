@@ -1,12 +1,18 @@
 #include<stdio.h>
 int main(){
     int a[]={120,502,118,188,106,447};
-    int *ptr1=&a[0];
-    int *ptr2=&a[1];
-    int *ptr3=&a[2];
-    int *ptr4=&a[3];
-    int *ptr5=&a[4];
-    int *ptr6=&a[5];
+    int *ptr1;
+    int *ptr2;
+    int *ptr3;
+    int *ptr4;
+    int *ptr5;
+    int *ptr6;
+    ptr1=&a[0];
+    ptr2=&a[1];
+    ptr3=&a[2];
+    ptr4=&a[3];
+    ptr5=&a[4];
+    ptr6=&a[5];
     printf("a[0]: %d\n",*ptr1);
     printf("a[1]: %d\n",*ptr2);
     printf("a[2]: %d\n",*ptr3);
