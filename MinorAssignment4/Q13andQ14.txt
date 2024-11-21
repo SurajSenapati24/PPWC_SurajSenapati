@@ -1,0 +1,32 @@
+q13). Trace the execution of the following fragment at line-1.
+ int m = 10, n = 5;
+ int *mp, *np;     
+ mp = &m;
+ np = &n;
+ *mp = *mp + *np;
+ *np = *mp- *np;
+ printf("%d %d\n%d %d\n", m, *mp, n, *np); /*
+ line-1 */
+
+ Output Should be:
+ 15 15
+ 10 10
+
+ q14)
+ int m = 25, n = 77;
+ char c = ’*’;
+ int *itemp;
+ /* describe the errors in each of the
+ following statements. */
+ m = &n;
+ itemp = m;
+ *itemp = c;
+ *itemp = &c;
+
+ Errors: 
+ m = &n;
+ m is int type and &n is address of n which should be stored in a pointer variable. Can't store address in integer variable
+ itemp = m;
+ itemp is a pointer variable, it can't store intger values .It can only contain address of a integer.
+ *itemp = c;itemp is a pointer of integer type can't store char type data in it
+ *itemp = &c;itemp is a pointer of integer type can store address of char in it
