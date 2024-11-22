@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void mergeArrays(int a[], int b[], int m, int n, int merged[]) {
+void mergeArrays(int a[], int m, int b[], int n, int merged[]) {
     int i = 0, j = 0, k = 0;
 
     while (i < m && j < n) {
@@ -27,7 +27,7 @@ int main() {
     int n = sizeof(b) / sizeof(b[0]);
     int merged[m + n];
 
-    mergeArrays(a, b, m, n, merged);
+    mergeArrays(a, m, b, n, merged);
 
     printf("Merged array: ");
     for (int i = 0; i < m + n; i++) {

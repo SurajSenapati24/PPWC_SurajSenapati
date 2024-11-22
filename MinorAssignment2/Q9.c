@@ -1,10 +1,11 @@
 #include <stdio.h>
-
+#include<ctype.h>
 int main() {
     char ch, i, j, k;
     int space;
     printf("Enter the choice of the character: ");
     scanf("%c", &ch);
+    ch=toupper(ch);
     int rows = ch - 'A' + 1;
     for (i = 0; i < rows; i++) {
         for (j = 'A'; j <= ch - i; j++) {
