@@ -8,3 +8,7 @@ int main(){
 	fun(a);
 	return 0;
 }
+/*Output: 
+5
+2
+*/
