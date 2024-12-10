@@ -7,10 +7,10 @@ int main(){
     int len_b=sizeof(b)/sizeof(b[0]);
     int i;
     for(i=0;i<len_a;i++){
-        printf("For a[%d] Value is %d and address is %p\n",i,a[i],&a[i]);
+        printf("For a[%d] Value is %d and address is %u\n",i,a[i],&a[i]);
     }
     for(i=0;i<len_b;i++){
-        printf("For b[%d] Value is %.1f and address is %p\n",i,b[i],&b[i]);
+        printf("For b[%d] Value is %.1f and address is %u\n",i,b[i],&b[i]);
     }
     return 0;
 }
