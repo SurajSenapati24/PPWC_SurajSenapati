@@ -8,7 +8,8 @@ int main(){
     }
     printf("%d\n",arr[2][4]);
     printf("%d\n",*(*(arr+2)+4));
-    return 0;}
+    return 0;
+}
 
 //Output: 24
 //        24
