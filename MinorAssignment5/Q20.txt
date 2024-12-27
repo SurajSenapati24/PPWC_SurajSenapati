@@ -1,0 +1,30 @@
+20. Which of the following statements are true?.
+(1) (void *)0 is a void pointer
+->True
+(void *) represents a pointer to any data type, and 0 is a valid null constant. 
+This means (void *)0 is a void pointer that points to NULL.
+
+(2) (void *)0 is a NULL pointer
+->True
+A pointer with the value 0 (or NULL) is considered a null pointer in C. 
+(void *)0 is often used to represent NULL in generic pointer operations.
+
+(3) int *p=(int *)0; p is a NULL pointer
+->True
+p is explicitly initialized to NULL by assigning (int *)0. 
+A pointer with the value 0 is a null pointer in C.
+(4) a[i]==i[a]
+->True
+This is a well-known C quirk. Array indexing in C is commutative:
+a[i] == *(a + i)
+i[a] == *(i + a)  // Both evaluate to the same value
+Since addition is commutative, a[i] == i[a] holds true.
+
+(5) a[i][j]== *(*(a+i)+j)
+->True
+In multi-dimensional arrays, a[i][j] can be broken down as:
+*(*(a + i) + j)
+a + i points to the i-th row
+*(a + i) gives the starting address of the i-th row
+*(a + i) + j points to the j-th element in that row
+Finally, dereferencing it gives the value at a[i][j].

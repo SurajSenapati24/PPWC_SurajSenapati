@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+void fun(){
+    int *q=(int *)malloc(sizeof(int));
+    *q=20;
+}
+int main(){
+    int *p;
+    int *r=NULL;
+    fun();
+    return 0;
+}
+
+(i) p is a wild pointer – ✅ True
+p is declared but not initialized. 
+In C, an uninitialized pointer points to a random memory location, making it a wild pointer.
+
+(ii) r is a NULL pointer – ✅ True
+r is explicitly initialized to NULL, which means it is a NULL pointer.
+
+(iii) q is a dangling pointer – ❌ False
+q points to dynamically allocated memory inside fun(). However, when fun() returns, q goes out of scope. 
+The memory allocated to q is leaked, but q itself is not dangling – it simply ceases to exist.
+A dangling pointer points to memory that has been freed, but this is not the case here.
+
+(iv) p is a dangling pointer – ❌ False
+p is wild, but not dangling because it doesn't point to deallocated memory.
+
+(v) fun() is making a memory leak – ✅ True
+malloc() allocates memory for q, but this memory is never freed before fun() exits. This results in a memory leak.
