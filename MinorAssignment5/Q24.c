@@ -12,3 +12,9 @@
  void demo(){
  printf("SS");
  }
+/*Output
+Q24.c: In function 'main':
+Q24.c:6:4: error: expected expression before ')' token
+  (*)fun();
+    ^
+ */

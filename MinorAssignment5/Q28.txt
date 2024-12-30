@@ -1,0 +1,16 @@
+Find out the correct syntal(s) for a pointer to constant (i.e. The pointer cannot able to change the value
+of the variable/array that it points).
+(1) const <data_type> * ptr;
+(2) <data_type> * const ptr;
+(3) <data_type> const *ptr;
+(4) <data_type> const * const fun_ptr
+(5) None of these
+
+Explaination:
+const <data_type> * ptr; → The value pointed to by ptr is constant. The pointer can be modified to point to another address.
+<data_type> const * ptr; → Equivalent to option 1. The value is constant, and the pointer can change.
+<data_type> * const ptr; → The pointer ptr is constant (i.e., cannot point to another address), 
+but the value it points to can be modified. This is not a pointer to a constant.
+<data_type> const * const fun_ptr; → Both the pointer and the value it points to are constant.
+
+Answer:Thus, options (1) and (3) are the correct syntaxes for a pointer to a constant.
