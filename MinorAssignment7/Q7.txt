@@ -1,0 +1,20 @@
+Write valid or invalid form of the followings.
+ (1) union{....}u;
+Valid
+This is an anonymous union with a variable u.
+The union is declared without a name but can still be accessed using u.
+
+ (2) union u{......};
+Valid
+This declares a named union u but does not create a variable.
+To use it, you must declare a variable later, like union u var;.
+
+ (3) struct{.....}s;
+Valid
+This is an anonymous structure with a variable s.
+Similar to anonymous unions, it defines a structure without giving it a type name.
+
+ (4) struct s{.....};
+Valid
+This declares a named structure s but does not instantiate a variable.
+A variable must be declared separately, like struct s var;.

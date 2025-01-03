@@ -15,3 +15,4 @@ int main() {
 
     return 0;
 }
+/*The Declaration is correct*/
