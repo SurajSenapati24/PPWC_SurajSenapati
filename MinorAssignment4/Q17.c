@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <ctype.h>
-
 void main()
 {
     char argv[4][10] = {"mine","cs","sc","soa"};
